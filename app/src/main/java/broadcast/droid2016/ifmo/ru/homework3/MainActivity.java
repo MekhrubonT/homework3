@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String IMAGENAME = "Shashlyk.jpg";
     public static final String ImageDownloadFinished = "ImageDownloadFinished";
+    private final String NOTDOWNLOADED = "Не загружено";
     private File cachedImage;
     private ImageView image;
     private TextView errortext;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             errortext.setVisibility(View.INVISIBLE);
         } else {
 
-            errortext.setText("Image is not found lala");
+            errortext.setText("Не загружено");
             image.setVisibility(View.INVISIBLE);
             errortext.setVisibility(View.VISIBLE);
         }
